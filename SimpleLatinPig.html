@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Pig</title>
+    <script>
+        var pigIt=('Pig latin is cool');
+        var splited=pigIt.split(' ');
+        var length=splited.length-1;
+        
+
+        var word=splited[0].split('');
+         word=word.reverse();
+         word= word.join('');
+         word=word+'ay';
+
+        let reversedArray=[];
+
+        for(var a=0; a<=length;a++)
+            {
+                var word=splited[a].split('');
+                word=word.reverse();
+                word= word.join('');
+                word=word+'ay';
+                reversedArray[a]=word + ' ';
+
+            }
+        
+        reversedArray=reversedArray.join('');
+        console.log(reversedArray);
+    </script>
+</head>
+<body>
+    <!--Reverse each word from array, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+    Examples
+    pigIt('Pig latin is cool'); //  giPay nitalay siay loocay
+    pigIt('Hello world !');     // olleHay dlroway !-->
+</body>
+</html>
